@@ -45,7 +45,7 @@
             $('head').append('<script src="' + jsLib + '"></script>');
         });
     }
-    debugger;
+   
     //setup Header
 
     $("<div class='resume-header-title' id='resume-header-title'><h1>" + data.pageHeader.title +
@@ -99,6 +99,15 @@
         //about
         if (bc.type == "about") {
             $("#" + bc.id).addClass('about-holder');
+            var dv = $("<div />",{id:"about-holder-container"});
+            if(bc.image){
+                $("<img />",{
+                    "class": "user-image",
+                    src: bc.image.src,
+                    alt: bc.image.alt
+                }).appendTo("#" + bc.id);
+            }
+           
 
             $("<p>" + bc.content + "</p>").appendTo("#" + bc.id);
         }
@@ -125,7 +134,6 @@
                     var tbl = $("<table />",{"class":"table"});
                     $("<tr><td class='horizonatal-header right-align'>Title</td><td class='left-allign'>"+p.title+"<td></tr>"+
                     "<tr><td class='horizonatal-header right-align'>Project Type</td><td class='left-allign'>"+p.type+"</td></tr>"+
-                    "<tr><td class='horizonatal-header right-align'>Environment</td><td class='left-allign'>"+p.env+"</td></tr>"+
                     "<tr><td class='horizonatal-header right-align'>Description</td><td class='left-allign'>"+p.desc+"</td></tr>").appendTo(tbl);
                     tbl.appendTo(contDiv);
                     if(idx < (c.projects.length - 1)) $("<hr />").appendTo(contDiv);

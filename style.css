@@ -147,7 +147,6 @@ ul.nav-stacked{
 }
 
 
-
 /*CSS for body element inside wrapper*/
 
 .resume-body {
@@ -178,18 +177,31 @@ ul.nav-stacked{
 
 .about-holder {
     /*Empty class*/
+   
 }
 
+.about-holder img.user-image{
+    margin:10px;
+    margin-top:0px;
+    height: 200px;
+    width: 200px;
+    top: 40px;
+    object-fit: cover;
+    border: 10px solid #FF00FF;
+    border-radius: 5px;
+}
 .about-holder p {
+    position: absolute;
     top: 60px;
+    left: 220px;
     padding: 20px 20px;
     text-align: left;
     color: #444;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
-    margin-left: 10%;
-    width: 80%;
+    margin: 10px;
+    
 }
 
 .resume-footer {
@@ -313,7 +325,7 @@ ul.nav-stacked{
     padding: 5px;
     padding-left: 10px;
     vertical-align: top;
-    
+    min-width: 150px;
 }
 .table tr th{
     font-weight: 900;
@@ -341,6 +353,10 @@ ol{
     margin-left:10px;
 }
 ol li{
+    padding: 5px;
+    padding-left: 10px;
+}
+ul li{
     padding: 5px;
     padding-left: 10px;
 }

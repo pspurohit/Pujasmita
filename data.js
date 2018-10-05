@@ -14,7 +14,8 @@ var data = {
     pageHeader: {
         title: "Pujasmita Purohit's resume",
         background: "",
-        onclick: "window.location.reload()"
+        onclick: "window.location.reload()",
+        
     },
     bodyMenu: [
 
@@ -41,7 +42,7 @@ var data = {
     social: [
         {
             name : 'linkedin',
-            target : "https://www.linkedin.com/in/soumyasarthakpadhee/",
+            target : "https://www.linkedin.com/in/pujasmita-purohit-aa58a216a/",
             icon : "fa-linkedin-square",
             tooltip: 'LinkedIn account'
         },
@@ -53,7 +54,7 @@ var data = {
         },
         {
             name : 'gmail',
-            target: "mailTo:soumya.sarthak.padhee@gmail.com",
+            target: "mailTo:purohit.pujasmita@gmail.com",
             icon : "fa-envelope",
             tooltip : 'Gmail'
         }
@@ -62,7 +63,8 @@ var data = {
             type: 'about',
             title: 'About',
             id: 'about',
-            content: "A dynamic professional with 5+ years of IT experience in <b>UI Development</b> looking for assignments in the domain of Software Development to deliver solutions for complex technical requirements. "
+            image : {src: 'puja.jpeg', alt: 'puja.jpeg'},
+            content: "A highly determined and motivated individual with good theoretical knowledge and technical skill complimented by excellent verbal and written skills. Well focused towards goal with smart -hardworking ability & sincerity. I am an ambitious, quick learner, work independently, self-confident, success oriented, team worker, and have the capacity to lead a team."
             
         },
         {
@@ -71,27 +73,27 @@ var data = {
             id: 'summary',
             content: [
                 {
-                    label: "Experiance Summary",
+                    label: "Technical Strength",
                     cont: [
-                        "5+ years of total IT Experience, in <b>UI development</b>",
-                        "Worked extensively in designing SPAs using HTML5/CSS3/JavaScript",
-                        "Experienced in multiple JavaScript library, AngularJS 1.x, Bootstrap 3, Handlebars, JQuery",
-                        "Experienced in designing small web application",
-                        "Experienced in Node.js",
-                        "Experienced in GIT",
-                        "Average experience in Python, PHP",
-                        "Average experience in Excel Macro using VBA"
+                        "MS-Office products",
+                        "Completed Computer course O-level with 72%(2013)",
+                        "Microbial technique including Streaking, Spreading, Pouring, Plating, Sterilization technique, Gram Staining, Bacterial culture, Media preparation, Isolation of microbes from air, water and soil",
+                        "Immunological Technique: ELISA Test, ABO Blood grouping",
+                        "Biochemical Technique: Estimation of carbohydrate, protein and lipid, RBC count, WBC count, Blood grouping Test",
+                        "Molecular Biology: SDS PAGE, Agarose gel electrophoresis, estimation of DNA and RNA from blood, cell, leaf ODD, Southern blotting, Northern blotting, Western blotting",
+                        "Plant Tissue Culture: Preparation of media, Sterilization of explant, leaf culture, and callus culture"
                     ]
                 },
                 {
                     label: "Roles & Responsibilities",
                     cont: [
-                        "Currently working as Member of technical staff",
-                        "Accomplished major role in design and implementation of interface for business logic and flow",
-                        "Involved in Designed, development and deployment phase of the project",
-                        "Involved in design discussion and documentation of the framework",
-                        "Involved in Code review",
-                        "Worked as an Individual Contributor for the assigned task"
+                        "Currently working as Program Director",
+                        "Organized 29th International conference on Sleep disorder and psychiatry, 2018 in London",
+                        "Organized 4th International conference on Mental health and human resilience, 2017 in Rome",
+                        "Organized 27th Euro congress on Psychiatrist and psychology, 2017 in Rome",
+                        "Organized 24th International conference on Psychosomatic medicines, 2017 in London",
+                        "Organized 27th International conference on Psychiatry and psychology health, 2018 in Paris",
+                        "Acted as Team lead on multiple occasions"
                     ]
                 }
             ]
@@ -103,34 +105,28 @@ var data = {
             title: 'Timeline',
             id: 'timeline',
             content: [{
-                    time: { "date": "12", "month": "07", "year": "1991" },
+                    time: { "date": "07", "month": "02", "year": "1995" },
                     timelineEvent: 'Day I was born',
                     icon: false
                 },
                 {
-                    time: { "year": "2006" },
-                    timelineEvent: 'Graduated from STD-X in Jawahar Navodaya Vidyalay, Belpada',
-                    icon: false
-                },
-                {
-                    time: { "year": "2008" },
-                    timelineEvent: 'Graduated from STD-XII in DAV Model Sr Secondary School, Jeypore',
+                    time: { "year": "2010" },
+                    timelineEvent: 'Graduated from STD-X ',
                     icon: false
                 },
                 {
                     time: { "year": "2012" },
-                    timelineEvent: 'Garduated from Bachelor in Veer Surendra Sai University of technology, Burla ',
+                    timelineEvent: 'Graduated from STD-XII',
                     icon: false
                 },
                 {
-                    time: { "date": "12", "month": "9", "year": "2012" },
-                    timelineEvent: 'Joined Infosys',
+                    time: { "year": "2012" },
+                    timelineEvent: 'Garduated from Bachelor in Anchal College, Padampur, Sambalpur ',
                     icon: false
                 },
-                
                 {
-                    time: { "date": "20", "month": "11", "year": "2017" },
-                    timelineEvent: 'Joined Riverbed',
+                    time: { "month": "06", "year": "2016" },
+                    timelineEvent: 'Joined Omics International Limited',
                     icon: false
                 }
                 
@@ -142,38 +138,16 @@ var data = {
             title: "Experiance",
             id: "experiance",
             content: [
-                {
-                    company : 'Infosys Limited',
-                    startTime : { "month":"Sep","year": "2012" },
-                    endTime : { "month":"Nov","year": "2017" },
-                    projects : [
-                        {
-                            title : 'IPE',
-                            type : 'Maintenance',
-                            env : 'HTML5, CSS3. JavaScript, JQuery, Bootstrap, AngularJS 1.6, Unix, Oracle DB,Informatica PowerCentre 9.1',
-                            desc : "I was responsible for keeping the environments up for floor management, keeping codes up-to-date. I was responsible for designing UI for automation.",  
-                        },
-                        {
-                            company : 'Infosys Limited',
-                            title : 'VOY',
-                            startTime : { "month":"Sep","year": "2012" },
-                            endTime : { "month":"Nov","year": "2017" },
-                            type : 'Internal',
-                            env : 'HTML5, CSS3. JavaScript, JQuery, Bootstrap, AngularJS 1.6',
-                            desc : "VOY was responsible for organizing different events inside Infosys. I was involved in designing pages for invitations, registration, score maintenance etc. I designed a website using PHP for real-e-state ads.",
-                        }
-                    ]
-                },
+                
                 
                 {
-                    company : 'Riverbed Limited',
-                    startTime : { "month":"Nov","year": "2017" },
+                    company : 'Omincs International Limited',
+                    startTime : { "month":"June","year": "2016" },
                     projects : [
                         {
-                            title : 'SCM',
-                            type : 'Product Developement',
-                            env : 'HTML5, CSS3. JavaScript, JQuery, Bootstrap, Handlebars, AngularJS 1.6,GIT, Docker',
-                            desc : "SCM is a product developed using Handlebars, and Bootstrap, Perl to replace the CLI controller for different hardware.",
+                            title : 'Program director',
+                            type : 'Event management',
+                            desc : "Organised many international conference on Sleep diorder, Psychiatristy and psychology, Psychomatic medicines. Acted as team leader on multiple occasions.",
                         }
                     ]
                 }
@@ -187,22 +161,31 @@ var data = {
             id: 'education',
             content: [
                 {
-                    degree : 'Bachelor of Engineering',
-                    inst : 'Veer Surendra Sai University of Technology, Burla',
-                    start: { "year": "2008" },
-                    end : {"year":"2012"},
-                    major: 'Electronics and Telecommunication',
-                    mark : '7.03 CGPA'
+                    degree : 'Master of Science',
+                    inst : 'Gandhi Institute of Biological Science, Berhampur',
+                    start: { "year": "2015" },
+                    end : {"year":"2017"},
+                    major: 'Life science',
+                    mark : '83.3% <br /> (Berhampur University topper)'
+                },
+                {
+                    degree : 'Bachelor of Science',
+                    inst : 'Anchal College, Padampur, Sambalpur',
+                    start: { "year": "2013" },
+                    end : {"year":"2015"},
+                    major: 'Zoology',
+                    mark : '72%'
                 },
                 {
                     degree : 'Higher Secondary',
-                    inst : 'Central Board of Secondary Education',
-                    mark : '78.2%'
+                    inst : 'Council of Higher Secondary Education, Odisha',
+                    mark : '63.67%',
+                    
                 },
                 {
                     degree : 'Secondary',
-                    inst : 'Central Board of Secondary Education',
-                    mark : '81.4%'
+                    inst : 'Board of Secondary Education, Odisha',
+                    mark : '80%'
                 }
             ]
 
@@ -215,34 +198,25 @@ var data = {
             content: [
                  {
                     label: 'Permanent Address',
-                    content : 'C/O : Radhamohan Padhee <br /> AT/PO : Khairmal <br />Block: Belpada <br /> Dist: Balangir<br /> Odisha, PIN-767026',
+                    content : 'C/O : Ram Narayan Purohit <br /> AT/PO : Padampur <br /> Dist: Bargadh<br /> Odisha, PIN-768036',
                     
                 },
                 {
                     label: 'Present Address',
-                    content : 'B305, SSVR TRIDAX <br />Balagere Rd, Varthur<br > Bengaluru, PIN-560087',
+                    content : 'Hyderabad, Telengana',
                     
                 },
                 {
                     label : 'Email',
-                    content : 'soumya.sarthak.padhee@gmail.com',
+                    content : 'purohit.pujasmita@gmail.com',
                     type : 'email'
                 },
-                {
-                    label : 'Phone number',
-                    content : '+91-9652147435',
-                    type : 'phone' 
-                    
-                },
-                {
-                    label: 'Passport',
-                    content : "<b>Passport number:</b> J7316186<br /><b>Issued on:</b> 04th June 2012<br /><b>Valid till:</b> 03rd June 2022"
-                },
+                
                 {
                     label : 'DOB',
 
 
-                    content : { "date": "12", "month": "07", "year": "1991" },
+                    content : { "date": "07", "month": "02", "year": "1995" },
 
                     type : 'date'
                 },
